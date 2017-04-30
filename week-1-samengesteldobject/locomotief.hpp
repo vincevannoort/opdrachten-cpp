@@ -15,6 +15,7 @@ private:
 	window & w;
 public:
 	locomotief(window & w, int start_x, int start_y, int size, int cabins);
+	void add_cabin(window & w, int start_x, int start_y, int size);
 	void print();
 };
 
