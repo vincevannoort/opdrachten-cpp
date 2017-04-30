@@ -12,7 +12,7 @@ TEST_CASE( "constructor, two_parameters" ){
    vector v( 1, 2 );
    std::stringstream s;
    s << v;
-   REQUIRE( s.str() == "(1.2)" );
+   REQUIRE( s.str() == "(1,2)" );
 }
 
 TEST_CASE( "add vector to vector, + operator" ){
