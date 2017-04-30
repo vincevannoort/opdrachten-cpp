@@ -1,0 +1,122 @@
+\hypertarget{classrational}{}\section{rational Class Reference}
+\label{classrational}\index{rational@{rational}}
+
+
+rational A\+DT  
+
+
+
+
+{\ttfamily \#include $<$rational.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrational_a5f971ef33181044f54d8e4fee71cb957}{rational} (int counter, int denominator=1)
+\begin{DoxyCompactList}\small\item\em constructor from explicit values \end{DoxyCompactList}\item 
+bool \hyperlink{classrational_a8b565720ea15ddfb17ea202e27698478}{operator==} (const \hyperlink{classrational}{rational} \&rhs) const
+\begin{DoxyCompactList}\small\item\em compare two rational values \end{DoxyCompactList}\item 
+\hyperlink{classrational}{rational} \hyperlink{classrational_a9c0f08f8be5db907dc6d93ad3f5cb26b}{operator$\ast$} (const int rhs) const
+\begin{DoxyCompactList}\small\item\em multiply a rational by an integer \end{DoxyCompactList}\item 
+\hyperlink{classrational}{rational} \hyperlink{classrational_a1dd39ab2daf08ee68087fdbb37be258e}{operator$\ast$} (const \hyperlink{classrational}{rational} \&rhs) const
+\begin{DoxyCompactList}\small\item\em multiply a rational by a rational \end{DoxyCompactList}\item 
+\hyperlink{classrational}{rational} \& \hyperlink{classrational_a9b83ad0c803d2ac242b42e71d954a356}{operator+=} (const \hyperlink{classrational}{rational} \&rhs)
+\begin{DoxyCompactList}\small\item\em add a rational to another rational \end{DoxyCompactList}\item 
+\hyperlink{classrational}{rational} \hyperlink{classrational_a2b5729aef261d16cd18ff7c7fcbf8c6e}{operator$\ast$=} (const \hyperlink{classrational}{rational} \&rhs)
+\begin{DoxyCompactList}\small\item\em multiply a rational by another rational and return the rational \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classrational_a5b7c78fca4537715369ba7da02abb4df}{operator$<$$<$} (std\+::ostream \&lhs, const \hyperlink{classrational}{rational} \&rhs)
+\begin{DoxyCompactList}\small\item\em output operator for a rational value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+rational A\+DT 
+
+This is an A\+DT that implements rational (fractional) values. The counter and denominator are stored as two (signed) integers. The appropriate constructors and operators are provided.
+
+Rational values are always simplied (reduced)\+: the counter and denominator have no common factors. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrational_a5f971ef33181044f54d8e4fee71cb957}\label{classrational_a5f971ef33181044f54d8e4fee71cb957}} 
+\index{rational@{rational}!rational@{rational}}
+\index{rational@{rational}!rational@{rational}}
+\subsubsection{\texorpdfstring{rational()}{rational()}}
+{\footnotesize\ttfamily rational\+::rational (\begin{DoxyParamCaption}\item[{int}]{counter,  }\item[{int}]{denominator = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+constructor from explicit values 
+
+This constructor initializes a rational from its counter and denominator. The default value for the denominator is 1, so a rational be initialized with just a whole value. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrational_a9c0f08f8be5db907dc6d93ad3f5cb26b}\label{classrational_a9c0f08f8be5db907dc6d93ad3f5cb26b}} 
+\index{rational@{rational}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classrational}{rational} rational\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const int}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+multiply a rational by an integer 
+
+This operator$\ast$ multiplies a rational value by an integer value. \mbox{\Hypertarget{classrational_a1dd39ab2daf08ee68087fdbb37be258e}\label{classrational_a1dd39ab2daf08ee68087fdbb37be258e}} 
+\index{rational@{rational}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classrational}{rational} rational\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \hyperlink{classrational}{rational} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+multiply a rational by a rational 
+
+This operator$\ast$ multiplies a rational value by a rational value. \mbox{\Hypertarget{classrational_a2b5729aef261d16cd18ff7c7fcbf8c6e}\label{classrational_a2b5729aef261d16cd18ff7c7fcbf8c6e}} 
+\index{rational@{rational}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{classrational}{rational} rational\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const \hyperlink{classrational}{rational} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+multiply a rational by another rational and return the rational 
+
+This operator$\ast$= multiplies a rational value by another rational variable. \mbox{\Hypertarget{classrational_a9b83ad0c803d2ac242b42e71d954a356}\label{classrational_a9b83ad0c803d2ac242b42e71d954a356}} 
+\index{rational@{rational}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \hyperlink{classrational}{rational}\& rational\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classrational}{rational} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+add a rational to another rational 
+
+This operator+= adds a rational value a rational variable. \mbox{\Hypertarget{classrational_a8b565720ea15ddfb17ea202e27698478}\label{classrational_a8b565720ea15ddfb17ea202e27698478}} 
+\index{rational@{rational}!operator==@{operator==}}
+\index{operator==@{operator==}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool rational\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classrational}{rational} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+compare two rational values 
+
+This operator tests for equality. It returns true if and only if the counter and denminator of both operands are equal. 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrational_a5b7c78fca4537715369ba7da02abb4df}\label{classrational_a5b7c78fca4537715369ba7da02abb4df}} 
+\index{rational@{rational}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!rational@{rational}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{const \hyperlink{classrational}{rational} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+output operator for a rational value 
+
+This operator$<$$<$ prints a constructor in the format \mbox{[}counter/denominator\mbox{]} where both values are printed as decimal values. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{rational_8hpp}{rational.\+hpp}\end{DoxyCompactItemize}
