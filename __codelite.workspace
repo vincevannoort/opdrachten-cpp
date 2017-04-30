@@ -12,10 +12,16 @@
       <Project Name="week-1-samengesteldobject" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="week-2-rational" Path="week-2-rational/_codelite.project" Active="Yes"/>
+  <Project Name="week-2-rational" Path="week-2-rational/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="week-2-rational" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="week-2-vector" Path="week-2-vector/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="week-2-vector" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

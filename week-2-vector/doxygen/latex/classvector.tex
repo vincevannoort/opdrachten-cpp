@@ -1,0 +1,205 @@
+\hypertarget{classvector}{}\section{vector Class Reference}
+\label{classvector}\index{vector@{vector}}
+
+
+Vector class.  
+
+
+
+
+{\ttfamily \#include $<$vector.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvector_ada69c108ec9393e6f70bdfcd58366cbf}{vector} (int x=0, int y=0)
+\begin{DoxyCompactList}\small\item\em Constructor for the vector class. \end{DoxyCompactList}\item 
+bool \hyperlink{classvector_a14470a2d43b26c15f0f7aaeeb6ae4f04}{operator==} (const \hyperlink{classvector}{vector} \&) const
+\begin{DoxyCompactList}\small\item\em Compare operator for two vectors. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_a25f3bec51c3c238f516d6efc12a83ddc}{operator+} (const \hyperlink{classvector}{vector} \&) const
+\begin{DoxyCompactList}\small\item\em Addition of two vectors. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \& \hyperlink{classvector_aaf697df4ba3936748875757f0e0ce62a}{operator+=} (const \hyperlink{classvector}{vector} \&)
+\begin{DoxyCompactList}\small\item\em One side addition of two vectors. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_a45eb0f7dc223ac58649ab466d961c547}{operator$\ast$} (const int \&) const
+\begin{DoxyCompactList}\small\item\em Multiplication of vector with integer. \end{DoxyCompactList}\item 
+\hyperlink{classvector}{vector} \& \hyperlink{classvector_ad1d720c7cd340d051ff39a31f95995f7}{operator$\ast$=} (const int rhs)
+\begin{DoxyCompactList}\small\item\em One side multiplication of vector with integer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvector}{vector} \hyperlink{classvector_af3f0754484a0db96cf49a62c1da7b9e0}{operator$\ast$} (const int, const \hyperlink{classvector}{vector} \&)
+\begin{DoxyCompactList}\small\item\em Multiplication of integer with vector. \end{DoxyCompactList}\item 
+std\+::ostream \& \hyperlink{classvector_a7a6813f75dabd6f9575f9d6f91890255}{operator$<$$<$} (std\+::ostream \&lhs, const \hyperlink{classvector}{vector} \&rhs)
+\begin{DoxyCompactList}\small\item\em Output a vector properly to the cout. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vector class. 
+
+This is an class that implements vector values and their mathematical operators. The x and y values are stored as (signed) integers. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvector_ada69c108ec9393e6f70bdfcd58366cbf}\label{classvector_ada69c108ec9393e6f70bdfcd58366cbf}} 
+\index{vector@{vector}!vector@{vector}}
+\index{vector@{vector}!vector@{vector}}
+\subsubsection{\texorpdfstring{vector()}{vector()}}
+{\footnotesize\ttfamily vector\+::vector (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for the vector class. 
+
+Constructor that initializes the x and y value of the vector created. If no paramaters are provided, the empty values are set to 0. 
+\begin{DoxyParams}{Parameters}
+{\em int} & x, x value for vector, defaults to 0 \\
+\hline
+{\em int} & y, y value for vector, defaults to 0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classvector_a45eb0f7dc223ac58649ab466d961c547}\label{classvector_a45eb0f7dc223ac58649ab466d961c547}} 
+\index{vector@{vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \hyperlink{classvector}{vector} vector\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const int \&}]{lhs }\end{DoxyParamCaption}) const}
+
+
+
+Multiplication of vector with integer. 
+
+Multiplication of the given vector with an integer 
+\begin{DoxyParams}{Parameters}
+{\em const} & int \&, automatically provided when writing \char`\"{}vector(3,2) $\ast$ 8\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvector_ad1d720c7cd340d051ff39a31f95995f7}\label{classvector_ad1d720c7cd340d051ff39a31f95995f7}} 
+\index{vector@{vector}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{classvector}{vector} \& vector\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const int}]{rhs }\end{DoxyParamCaption})}
+
+
+
+One side multiplication of vector with integer. 
+
+Multiplication of the given vector with an integer 
+\begin{DoxyParams}{Parameters}
+{\em const} & int \&, automatically provided when writing \char`\"{}variable(type vector) $\ast$= 8\char`\"{} \\
+\hline
+{\em const} & vector \&, automatically provided when writing \char`\"{}8 $\ast$ vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvector_a25f3bec51c3c238f516d6efc12a83ddc}\label{classvector_a25f3bec51c3c238f516d6efc12a83ddc}} 
+\index{vector@{vector}!operator+@{operator+}}
+\index{operator+@{operator+}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \hyperlink{classvector}{vector} vector\+::operator+ (\begin{DoxyParamCaption}\item[{const \hyperlink{classvector}{vector} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Addition of two vectors. 
+
+Addition of the given vectors with their x and y values. 
+\begin{DoxyParams}{Parameters}
+{\em const} & vector \&, automatically provided when writing \char`\"{}vector(3,2) + vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvector_aaf697df4ba3936748875757f0e0ce62a}\label{classvector_aaf697df4ba3936748875757f0e0ce62a}} 
+\index{vector@{vector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \hyperlink{classvector}{vector} \& vector\+::operator+= (\begin{DoxyParamCaption}\item[{const \hyperlink{classvector}{vector} \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+One side addition of two vectors. 
+
+Addition of the given vectors with their x and y values. 
+\begin{DoxyParams}{Parameters}
+{\em const} & vector \&, automatically provided when writing \char`\"{}variable(type vector) += vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvector_a14470a2d43b26c15f0f7aaeeb6ae4f04}\label{classvector_a14470a2d43b26c15f0f7aaeeb6ae4f04}} 
+\index{vector@{vector}!operator==@{operator==}}
+\index{operator==@{operator==}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool vector\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classvector}{vector} \&}]{rhs }\end{DoxyParamCaption}) const}
+
+
+
+Compare operator for two vectors. 
+
+Compares the given vectors for their x and y values. 
+\begin{DoxyParams}{Parameters}
+{\em const} & vector \&, automatically provided when writing \char`\"{}vector(3,2) == vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classvector_af3f0754484a0db96cf49a62c1da7b9e0}\label{classvector_af3f0754484a0db96cf49a62c1da7b9e0}} 
+\index{vector@{vector}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator$\ast$}{operator*}}
+{\footnotesize\ttfamily \hyperlink{classvector}{vector} operator$\ast$ (\begin{DoxyParamCaption}\item[{const int}]{lhs,  }\item[{const \hyperlink{classvector}{vector} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Multiplication of integer with vector. 
+
+Multiplication of the given an integer with vector 
+\begin{DoxyParams}{Parameters}
+{\em const} & int \&, automatically provided when writing \char`\"{}8 $\ast$ vector(3,2)\char`\"{} \\
+\hline
+{\em const} & vector \&, automatically provided when writing \char`\"{}8 $\ast$ vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvector_a7a6813f75dabd6f9575f9d6f91890255}\label{classvector_a7a6813f75dabd6f9575f9d6f91890255}} 
+\index{vector@{vector}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!vector@{vector}}
+\subsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily std\+::ostream\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{lhs,  }\item[{const \hyperlink{classvector}{vector} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Output a vector properly to the cout. 
+
+Output a vector properly to the cout 
+\begin{DoxyParams}{Parameters}
+{\em std\+::ostream} & \& lhs, automatically provided when writing \char`\"{}cout $<$$<$ vector(3,2)\char`\"{} \\
+\hline
+{\em const} & vector \& rhs, automatically provided when writing \char`\"{}cout $<$$<$ vector(3,2)\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ostream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vector.\+hpp\item 
+vector.\+cpp\end{DoxyCompactItemize}
