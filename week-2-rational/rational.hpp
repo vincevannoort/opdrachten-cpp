@@ -62,10 +62,12 @@ public:
    /// [counter/denominator] where both values are printed as
    /// decimal values.
    friend std::ostream & operator<<( std::ostream & lhs, const rational & rhs ){
-      return lhs 
-         << "[" 
-         << rhs.counter 
+      return lhs
+         << "["
+		 << "0x" << std::setfill('0') << std::setw(2) << std::hex 
+		 << rhs.counter 
          << "/" 
+		 << "0x" << std::setw(2)
          << rhs.denominator
          << "]";
    }   
