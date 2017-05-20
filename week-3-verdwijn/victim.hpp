@@ -9,6 +9,7 @@ class victim : public rectangle {
 public:
 	victim( window & w, const vector & start, const vector & end );
 	void interact( drawable & other ) override;
+	void adjust_based_on_touch();
 };
 
 #endif // VICTIM_HPP

@@ -12,7 +12,7 @@ public:
    ball( window & w, const vector & midpoint, int radius, const vector & speed );
    void update() override;
    void interact( drawable & other ) override;
-   void adjust_based_on_touch() override;
+   //void adjust_based_on_touch() override;
 };
 
 #endif // BALL_HPP

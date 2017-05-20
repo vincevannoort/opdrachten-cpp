@@ -20,7 +20,7 @@ void ball::interact( drawable & other ) {
    }
 }
 
-void ball::adjust_based_on_touch() {
-	radius *= 0.7;
-	size *= 0.7; // with overloaded *= operator for vector from week 2.
-}
+//void ball::adjust_based_on_touch() {
+//	radius *= 0.7;
+//	size *= 0.7; // with overloaded *= operator for vector from week 2.
+//}
