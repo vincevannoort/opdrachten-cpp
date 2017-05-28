@@ -4,30 +4,51 @@
   <wxString Value="C:\v1oopc-practica\__codelite.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\v1oopc-practica\week-5-hc595\main.cpp" Name="FileName"/>
+      <wxString Value="C:\v1oopc-practica\week-5-decorator\main.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="7" Name="CurrentLine"/>
+      <int Value="14" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\v1oopc-practica\week-5-hc595\pin_in_and_decorator.hpp" Name="FileName"/>
+      <wxString Value="C:\v1oopc-practica\week-5-decorator\pin_in_and_decorator.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="10" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\v1oopc-practica\week-5-decorator\pin_in_and_decorator.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="11" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\v1oopc-practica\week-5-hc595\pin_in_and_decorator.cpp" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="5" Name="CurrentLine"/>
+      <wxString Value="C:\v1oopc-practica\week-4-patroon\main.cpp" Name="FileName"/>
+      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="30" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\v1oopc-practica\week-5-hc595\makefile" Name="FileName"/>
+      <wxString Value="C:\v1oopc-practica\week-4-input\main.cpp" Name="FileName"/>
+      <int Value="11" Name="FirstVisibleLine"/>
+      <int Value="38" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\v1oopc-practica\week-2-vector\vector.cpp" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="14" Name="CurrentLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\v1oopc-practica\week-2-vector\vector.hpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
