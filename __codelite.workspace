@@ -54,7 +54,13 @@
       <Project Name="week-4-patroon" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
-  <Project Name="week-5-hc595" Path="week-5-hc595/_codelite.project" Active="Yes"/>
+  <Project Name="week-5-decorator" Path="week-5-decorator/_codelite.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Project Name="week-5-decorator" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+  <Project Name="week-5-hc595" Path="week-5-hc595/_codelite.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Project Name="week-5-hc595" ConfigName="Release"/>
