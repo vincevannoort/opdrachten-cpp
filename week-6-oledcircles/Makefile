@@ -9,10 +9,10 @@
 #############################################################################
 
 # source files in this project (main.cpp is automatically assumed)
-SOURCES := pin_out_invert_decorator.cpp pin_out_all_decorator.cpp
+SOURCES :=
 
 # header files in this project
-HEADERS := pin_out_invert_decorator.hpp pin_out_all_decorator.hpp
+HEADERS :=
 
 # other places to look for files for this project
 SEARCH  := 
